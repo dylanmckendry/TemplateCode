@@ -5,7 +5,8 @@ using System.Text;
 
 namespace TemplateCode.Business
 {
-    public class Class1
+    public interface IPersonBusiness
     {
+
     }
 }

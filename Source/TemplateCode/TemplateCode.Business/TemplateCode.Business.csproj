@@ -39,8 +39,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="IPersonBusiness.cs" />
+    <Compile Include="PersonBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TemplateCode.Model\TemplateCode.Model.csproj">
+      <Project>{78488d99-cf1c-4d7b-acf0-e82b67523278}</Project>
+      <Name>TemplateCode.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TemplateCode.Repository\TemplateCode.Repository.csproj">
+      <Project>{a81c7ad2-db57-4fdf-929c-87ac00e2ee12}</Project>
+      <Name>TemplateCode.Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
